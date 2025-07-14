@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registro - Draftosaurus</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="d-flex justify-content-center align-items-center vh-100" style="background-color: #fff9c4;">
+
+  <div class="bg-light p-4 rounded shadow w-100" style="max-width: 360px;">
+    <h2 class="text-center mb-4">Registro de Jugador</h2>
+    
+    <!-- Formulario sin accion -->
+    <form action="Inicio.html" method="get">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre completo</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" required>
+      </div>
+      <div class="mb-3">
+        <label for="usuario" class="form-label">Nombre de usuario</label>
+        <input type="text" class="form-control" id="usuario" name="usuario" required>
+      </div>
+      <div class="mb-3">
+        <label for="clave" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="clave" name="clave" required>
+      </div>
+      <button type="submit" class="btn btn-success w-100">Registrarse</button>
+    </form>
+  </div>
+
+</body>
+</html>

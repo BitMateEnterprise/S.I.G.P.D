@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Draftosaurus - Tablero Personal</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./css/estilo.css" />
+</head>
+<body>
+
+  
+  <nav class="navbar navbar-dark bg-dark ">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">Drafto Craft - Tablero Personal</span>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <!-- Conteo de puntos  -->
+    <div class="row text-center">
+      <div class="col-md-4">
+        <h5>Ronda actual</h5>
+        <span class="badge bg-secondary fs-5">1</span>
+      </div>
+      <div class="col-md-4">
+        <h5>Turno de</h5>
+        <span class="badge bg-info text-dark fs-5">Jugador 1</span>
+      </div>
+      <div class="col-md-4">
+        <h5>Puntos</h5>
+        <span class="badge bg-success fs-5">0</span>
+      </div>
+    </div>
+
+    <!-- Imagen del tablero--> 
+    <div class="text-center mb-4">
+      <h4>Tu Tablero</h4>
+      <div class=" rounded p-3">
+        <img src="./Imagenes/Tablero.jpg" class="img-fluid rounded shadow tablero-img" alt="Tablero de Draftosaurus" />
+      </div>
+    </div>
+
+    <!-- Dinosaurios disponibles -->
+<div class="mb-4">
+  <h5>Mobs Disponibles</h5>
+  <div class="d-flex flex-wrap gap-2 justify-content-center" id="dinosaurios">
+    <img src="./Fichas/Piglin.png" alt="Piglin" class="dino-img" />
+    <img src="./Fichas/Enderman.png" alt="Enderman" class="dino-img" />
+    <img src="./Fichas/Esqueleto.png" alt="Esqueleto" class="dino-img" />
+    <img src="./Fichas/Creeper.png" alt="Creeper" class="dino-img" />
+    <img src="./Fichas/Bruja.png" alt="Bruja" class="dino-img" />
+    <img src="./Fichas/Zombi.png" alt="Zombi" class="dino-img" />
+  </div>
+</div>
+
+<!-- Dado del juego -->
+<div class="mb-5 text-center">
+  <h5>Caras del Dado</h5>
+  <div class="justify-content-center gap-4">
+    <img src="./Imagenes/Aldea.png" alt="Dado 1" class="dado-img" />
+    <img src="./Imagenes/Minas.png" alt="Dado 2" class="dado-img" />
+    <img src="./Imagenes/Nether.png" alt="Dado 3" class="dado-img" />
+    <img src="./Imagenes/OverWorld.png" alt="Dado 4" class="dado-img" />
+    <img src="./Imagenes/SinCreeper.png" alt="Dado 5" class="dado-img" />
+    <img src="./Imagenes/SinMobs.png" alt="Dado 6" class="dado-img" />
+  </div>
+</div>
+
+
+
+    <!-- Botones -->
+    <div class="text-center mb-4 d-flex justify-content-center gap-2">
+      <button class="btn btn-outline-primary">Pasar Turno</button>
+      <a href="./Reglas.html" class="btn btn-outline-secondary">Reglas</button>
+      <a href="./FinDePartida.html" class="btn btn-danger ">Finalizar Partida</a>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
